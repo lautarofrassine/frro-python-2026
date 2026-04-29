@@ -7,11 +7,11 @@ def maximo_encadenado(a: float, b: float, c: float) -> float:
     Restricción: Utilizar UNICAMENTE tres IFs y comparaciones encadenadas.
     Referencia: https://docs.python.org/3/reference/expressions.html#comparisons
     """
-    if (a >= b and a>= c): 
-        return a 
-    elif (b >=a and b>= c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
         return b
-    elif (c >= b and c>= a):
+    elif c >= b and c >= a:
         return c
 
 
@@ -29,8 +29,8 @@ def maximo_cuadruple(a: float, b: float, c: float, d: float) -> float:
     """Re-escribir para que tome 4 parámetros, utilizar la función max.
 
     Referencia: https://docs.python.org/3/library/functions.html#max"""
-   
-    maximo= max(a,b,c,d)
+
+    maximo = max(a, b, c, d)
     return maximo
 
 

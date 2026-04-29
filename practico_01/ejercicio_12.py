@@ -6,7 +6,6 @@ base de datos y se quieren combinar estas listas para que luego puedan crearse
 los objetos de la capa de negocio.
 """
 
-
 from typing import Any, List, Tuple
 
 nombre_articulos = ["ventana", "lámpara", "shampoo"]
@@ -19,13 +18,10 @@ def combinar_basico(nombres: List[str], precios: List[float]) -> Tuple[Any]:
 
     Restricción: Resolver utilizando un bucle for.
     """
-    resultado:List=[]
+    resultado: List = []
     for i in range(len(nombres)):
-        resultado.append((nombres[i],precios[i]))
+        resultado.append((nombres[i], precios[i]))
     return tuple(resultado)
-    
-
-
 
 
 # NO MODIFICAR - INICIO
@@ -45,13 +41,15 @@ assert combinar_basico(nombre_articulos, precio_articulos) == respuesta
 id_articulos = [6852, 1459, 3578]
 
 
-def combinar_enumerate(nombres: List[str], precios: List[float], ids: List[int]) -> Tuple[Any]:
+def combinar_enumerate(
+    nombres: List[str], precios: List[float], ids: List[int]
+) -> Tuple[Any]:
     """Re-Escribir utilizando enumerate y agregando un nuevo componente.
     Referencia: https://docs.python.org/3/library/functions.html#enumerate
     """
-    resultado:List=[]
-    for i,nombre in enumerate(nombres):
-        resultado.append((nombre,precios[i],ids[i]))
+    resultado: List = []
+    for i, nombre in enumerate(nombres):
+        resultado.append((nombre, precios[i], ids[i]))
     return tuple(resultado)
 
 
@@ -72,13 +70,15 @@ assert combinar_enumerate(nombre_articulos, precio_articulos, id_articulos) == r
 id_articulos = [6852, 1459, 3578]
 
 
-def combinar_zip(nombres: List[str], precios: List[float], ids: List[int]) -> Tuple[Any]:
+def combinar_zip(
+    nombres: List[str], precios: List[float], ids: List[int]
+) -> Tuple[Any]:
     """Re-Escribir utilizando zip.
     Referencia: https://docs.python.org/3/library/functions.html#zip
     """
-    resultado:List=[]
-    for nombre,precio,id in zip(nombres,precios,ids):
-        resultado.append((nombre,precio,id))
+    resultado: List = []
+    for nombre, precio, id in zip(nombres, precios, ids):
+        resultado.append((nombre, precio, id))
     return tuple(resultado)
 
 

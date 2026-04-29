@@ -30,9 +30,9 @@ def mitad(palabra: str) -> str:
     Referencia: https://docs.python.org/3/tutorial/introduction.html#lists
     """
     if len(palabra) % 2 == 0:
-        return palabra[:len(palabra) // 2]
+        return palabra[: len(palabra) // 2]
     else:
-        return palabra[:len(palabra) // 2 + 1]
+        return palabra[: len(palabra) // 2 + 1]
 
 
 # NO MODIFICAR - INICIO
