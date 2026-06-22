@@ -7,7 +7,7 @@ Objetivo principal: reducir la carga administrativa de la clínica y garantizar 
 
 ## Modelo de Dominio
 
-Insertar el modelo de dominio aquí.
+![Modelo de Dominio](ModeloDeDominioTPI.drawio.png)
 
 ## Bosquejo de Arquitectura
 
